@@ -55,5 +55,5 @@ thirdPlatform.addEventListener('click',()=>{
     window.open("https://github.com/k-y-o-u-m-a");
 });
 fourthPlatform.addEventListener('click',()=>{
-    window.open("https://www.linkedin.com/in/Yash-Bhushan-36ab97204/");
+    window.open("https://www.linkedin.com/in/yash-bhushan-7bb19422b/");
 });
