@@ -1,5 +1,6 @@
 /* Home Page */
-.home{
+
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,98 +9,116 @@
     margin: 0 auto;
     margin-top: 10vh;
 }
-.content *{
+
+.content * {
     margin: 0%;
 }
-.content div{
+
+.content div {
     min-width: 660px;
     min-height: 150px;
 }
-.content h3{
-    font-family: 'Inconsolata', monospace;
-    color: #F14B4B;
+
+.content h3 {
+    font-family: "Inconsolata", monospace;
+    color: #f14b4b;
     font-size: 1.5rem;
 }
-.content h1{
+
+.content h1 {
     color: #e9e7e7;
     font-size: 7.5rem;
     visibility: hidden;
     animation: removeHide 0s ease-out 0.8s 1 forwards;
 }
-@keyframes removeHide{
-    100%{
+
+@keyframes removeHide {
+    100% {
         visibility: visible;
     }
 }
-.content h2{
-    color: #BAC3CF;
+
+.content h2 {
+    color: #bac3cf;
     font-size: 2rem;
 }
-.content div::before{
-    content: '';
+
+.content div::before {
+    content: "";
     position: absolute;
     height: 150px;
     width: 760px;
-    background: linear-gradient( to right, #F14B4B 50%, #00000000 50%);
+    background: linear-gradient(to right, #f14b4b 50%, #00000000 50%);
     background-size: 1520px;
     background-repeat: no-repeat;
     transform: rotate(180deg);
     animation: name 1.5s ease-out 0s 1 forwards;
 }
-@keyframes name{
-    0%{
+
+@keyframes name {
+    0% {
         background-position: -100%;
     }
-    50%,70%{
+    50%,
+    70% {
         background-position: 0;
     }
-    100%{
+    100% {
         background-position: 100%;
     }
 }
-.role{
-    font-family: 'Inconsolata', monospace;
-    color: #F14B4B;
-    border-right: 3px solid #F14B4B;
+
+.role {
+    font-family: "Inconsolata", monospace;
+    color: #f14b4b;
+    border-right: 3px solid #f14b4b;
 }
 
+
 /* Background Animation */
-.box{
+
+.box {
     position: absolute;
     bottom: 0%;
     background-color: rgba(55 83 110 / 30%);
-    box-shadow: 0 0 10px 0 rgba( 31, 38, 135, 0.5 );
-    border: 1px solid rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 0 10px 0 rgba(31, 38, 135, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     height: 100px;
     width: 100px;
     z-index: -1;
 }
-.box1{
+
+.box1 {
     left: 7%;
     animation: bgAnimate 3.5s linear 0s infinite;
 }
-.box2{
+
+.box2 {
     left: 27%;
     animation: bgAnimate 3s linear 0s infinite;
 }
-.box3{
+
+.box3 {
     left: 47%;
     animation: bgAnimate 2.5s linear 0s infinite;
 }
-.box4{
+
+.box4 {
     left: 67%;
     animation: bgAnimate 3s linear 0s infinite;
 }
-.box5{
+
+.box5 {
     left: 87%;
     animation: bgAnimate 3.5s linear 0s infinite;
 }
-@keyframes bgAnimate{
-    0%{
+
+@keyframes bgAnimate {
+    0% {
         opacity: 1;
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         opacity: 0;
         bottom: 100%;
         height: 20px;
@@ -109,97 +128,100 @@
 }
 
 @media only screen and (max-width: 850px) {
-    .content h1{
+    .content h1 {
         font-size: 7rem;
     }
-    .content h2{
+    .content h2 {
         font-size: 1.5rem;
     }
-    .content div{
+    .content div {
         min-width: 600px;
         min-height: 120px;
     }
-    .content div::before{
+    .content div::before {
         width: 600px;
         height: 120px;
         background-size: 1200px;
     }
-    .box1{
+    .box1 {
         left: 10%;
     }
-    .box5{
+    .box5 {
         left: 85%;
     }
 }
+
 @media only screen and (max-width: 768px) {
-    .content h1{
+    .content h1 {
         font-size: 5rem;
     }
-    .content div{
+    .content div {
         min-width: 440px;
         min-height: 90px;
     }
-    .content div::before{
+    .content div::before {
         width: 440px;
         background-size: 880px;
         height: 90px;
     }
-    .box5{
+    .box5 {
         display: none;
     }
-    .box2{
+    .box2 {
         left: 35%;
     }
-    .box3{
+    .box3 {
         left: 55%;
     }
-    .box4{
+    .box4 {
         left: 75%;
     }
 }
+
 @media only screen and (max-width: 600px) {
-    .content h1{
+    .content h1 {
         font-size: 4rem;
     }
-    .content div{
+    .content div {
         min-width: 370px;
         min-height: 80px;
     }
-    .content div::before{
+    .content div::before {
         width: 370px;
         background-size: 740px;
         height: 80px;
     }
-    .box4{
+    .box4 {
         display: none;
     }
-    .box3{
+    .box3 {
         left: 70%;
     }
-    .box2{
+    .box2 {
         left: 40%;
     }
 }
+
 @media only screen and (max-width: 425px) {
-    .content h1{
+    .content h1 {
         font-size: 3.5rem;
     }
-    .content div{
+    .content div {
         min-width: 310px;
         min-height: 70px;
     }
-    .content div::before{
+    .content div::before {
         width: 310px;
         background-size: 620px;
-        height: 70px;
+        height: 140px;
     }
-    .content h2{
+    .content h2 {
         font-size: 1.2rem;
     }
-    .box3{
+    .box3 {
         left: 65%;
     }
-    .box2{
+    .box2 {
         display: none;
     }
 }

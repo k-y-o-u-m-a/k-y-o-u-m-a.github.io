@@ -1,22 +1,26 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-color: #061320;
     margin: 0;
     padding: 0%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
+
 .stop-scrolling {
     height: 100%;
     overflow: hidden;
 }
-a{
+
+a {
     text-decoration: none;
-    color: #36FBB1;
-    font-family: 'Inconsolata', monospace;
+    color: #36fbb1;
+    font-family: "Inconsolata", monospace;
 }
-.part{
+
+.part {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -25,25 +29,31 @@ a{
     margin: 0 auto;
     overflow: hidden;
 }
-.title{
+
+.title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
 }
-.title h1{
+
+.title h1 {
     display: inline-block;
     font-size: 5rem;
     color: white;
     margin: 0%;
 }
-.wrap{
+
+.wrap {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
+
 /* for left and right section */
-section{
+
+section {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -55,98 +65,117 @@ section{
     z-index: 1;
 }
 
+
 /* Right Section */
-.right{
-    color: #36FBB1;
+
+.right {
+    color: #36fbb1;
     right: 0;
 }
-.right h2{
+
+.right h2 {
     position: relative;
     bottom: 95px;
     transform: rotate(90deg);
 }
-.right h2 a{
+
+.right h2 a {
     transition: 0.1s font-size;
     margin-right: 24px;
 }
-.right h2 a:hover{
+
+.right h2 a:hover {
     font-size: 25px;
 }
-section hr{
+
+section hr {
     height: 25%;
     margin: 0;
-    border-color: #E7E9E9;
+    border-color: #e7e9e9;
 }
 
+
 /* Left section */
-.socials img{
+
+.socials img {
     height: 30px;
     width: 30px;
     transition: 0.5s linear;
     border-radius: 50%;
 }
-.left img{
+
+.left img {
     padding: 30% 0;
 }
-.socials a:hover img{
+
+.socials a:hover img {
     transform: rotate(360deg);
 }
 
+
 /* Buttons */
-button{
+
+button {
     position: relative;
     display: block;
     min-width: 130px;
     height: 40px;
     margin: 0 auto;
-    color: #36FBB1;
-    border: 1px solid #36FBB1;
+    color: #36fbb1;
+    border: 1px solid #36fbb1;
     border-radius: 50px;
-    background-color: #36FBB125;
+    background-color: #36fbb125;
     padding: 5px 10px;
     font-weight: 500;
     font-size: 1rem;
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
     cursor: pointer;
     transition: all 0.2s linear;
-    box-shadow: 0 3px 2px #36FBB1;
+    box-shadow: 0 3px 2px #36fbb1;
 }
+
 button:hover {
-    box-shadow: 0 2px 2px #36FBB1;
+    box-shadow: 0 2px 2px #36fbb1;
     top: 1px;
 }
+
 button:active {
-    box-shadow: 0 0 #36FBB1;
+    box-shadow: 0 0 #36fbb1;
     top: 3px;
 }
+
 @media only screen and (max-width: 850px) {
-    .title h1{
+    .title h1 {
         font-size: 4.5rem;
     }
 }
+
 @media only screen and (max-width: 768px) {
-    .title h1{
+    .title h1 {
         font-size: 4rem;
     }
 }
+
 @media only screen and (max-width: 600px) {
-    button{
+    button {
         min-width: 150px;
     }
 }
+
 @media only screen and (max-width: 425px) {
-    .title h1{
+    .title h1 {
         font-size: 3rem;
     }
-    .part{
+    .part {
         width: 95%;
     }
 }
+
 @media only screen and (max-width: 320px) {
-    .title h1{
+    .title h1 {
         font-size: 2.2rem;
     }
-    .part{
+    .part {
         width: 95%;
     }
 }

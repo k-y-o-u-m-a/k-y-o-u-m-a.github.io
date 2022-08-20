@@ -1,5 +1,6 @@
 /* Navigation Bar */
-nav{
+
+nav {
     width: 100%;
     min-height: 10vh;
     position: fixed;
@@ -10,12 +11,14 @@ nav{
     z-index: 2;
     background-color: #061320;
 }
-nav img{
+
+nav img {
     height: 50px;
     width: 50px;
     margin-left: 20px;
 }
-menu{
+
+menu {
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -24,16 +27,18 @@ menu{
     margin-right: 20px;
     overflow: hidden;
 }
-menu hr{
+
+menu hr {
     position: relative;
     height: 2px;
     width: 35px;
-    background-color: #36FBB1;
-    border-color: #36FBB1;
+    background-color: #36fbb1;
+    border-color: #36fbb1;
     transform-origin: left;
     margin: 0;
 }
-.phoneMenu{
+
+.phoneMenu {
     position: fixed;
     top: -100vh;
     height: 100vh;
@@ -45,110 +50,134 @@ menu hr{
     background-color: #061320;
     z-index: 1;
 }
-.removePhoneMenu{
+
+.removePhoneMenu {
     animation: removePhoneMenu 0.5s linear 0s 1 forwards;
 }
-@keyframes removePhoneMenu{
-    0%{
+
+@keyframes removePhoneMenu {
+    0% {
         top: 10vh;
     }
-    100%{
+    100% {
         top: -100vh;
     }
 }
-.showPhoneMenu{
+
+.showPhoneMenu {
     animation: showPhoneMenu 0.5s linear 0s 1 forwards;
 }
-@keyframes showPhoneMenu{
-    0%{
+
+@keyframes showPhoneMenu {
+    0% {
         top: -100vh;
     }
-    100%{
+    100% {
         top: 10vh;
     }
 }
+
+
 /* animation classes to show animation in menu button while showing menu in phone*/
-.remove{
+
+.remove {
     animation: remove 0.3s linear 0s 1 forwards;
 }
-@keyframes remove{
-    0%{
+
+@keyframes remove {
+    0% {
         left: 0px;
     }
-    100%{
+    100% {
         left: 30px;
     }
 }
-.rotateDown{
+
+.rotateDown {
     animation: rotateDown 0.3s linear 0s 1 forwards;
 }
-@keyframes rotateDown{
-    0%{
+
+@keyframes rotateDown {
+    0% {
         transform: rotateZ(0deg);
     }
-    100%{
+    100% {
         transform: rotateZ(45deg);
     }
 }
-.rotateUp{
+
+.rotateUp {
     animation: rotateUp 0.3s linear 0s 1 forwards;
 }
-@keyframes rotateUp{
-    0%{
+
+@keyframes rotateUp {
+    0% {
         transform: rotateZ(0deg);
     }
-    100%{
+    100% {
         transform: rotateZ(-45deg);
     }
 }
+
+
 /* animation classes to show animation in menu button while hiding menu */
-.revind2{
+
+.revind2 {
     animation: revind2 0.3s linear 0s 1 forwards;
 }
-@keyframes revind2{
-    0%{
+
+@keyframes revind2 {
+    0% {
         left: 30px;
     }
-    100%{
+    100% {
         left: 0px;
     }
 }
-.revind1{
+
+.revind1 {
     animation: revind1 0.3s linear 0s 1 forwards;
 }
-@keyframes revind1{
-    0%{
+
+@keyframes revind1 {
+    0% {
         transform: rotateZ(45deg);
     }
-    100%{
+    100% {
         transform: rotateZ(0deg);
     }
 }
-.revind3{
+
+.revind3 {
     animation: revind3 0.3s linear 0s 1 forwards;
 }
-@keyframes revind3{
-    0%{
+
+@keyframes revind3 {
+    0% {
         transform: rotateZ(-45deg);
     }
-    100%{
+    100% {
         transform: rotateZ(0deg);
     }
 }
-ul{
+
+ul {
     width: 40%;
     display: flex;
     justify-content: space-evenly;
     padding: 0;
 }
-ul a{
-    color: #D6E2DE;
+
+ul a {
+    color: #d6e2de;
     transition: 0.1s all;
 }
-ul a:hover{
-    color: #36FBB1;
+
+ul a:hover {
+    color: #36fbb1;
 }
-ul li{
+
+ul li {
     list-style: none;
     padding: 0 2%;
     height: auto;
@@ -157,11 +186,22 @@ ul li{
     align-items: center;
 }
 
+.name-logo {
+    font-family: "Sacramento", cursive;
+    color: #f14b4b;
+    font-size: 44px;
+    font-style: italic;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
 @media only screen and (max-width: 600px) {
-    nav ul, section{
+    nav ul,
+    section {
         display: none;
     }
-    menu, .phoneMenu{
+    menu,
+    .phoneMenu {
         display: flex;
     }
 }
